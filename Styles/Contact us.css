@@ -1,12 +1,82 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
+}
 /* Centered form section for Contact Us */
 .centered-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
-  margin-top: 120px;
-  margin-bottom: 40px;
+  min-height: 80vh;
+  margin: 0;
+}
+.centered-form form {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffffa8;
+  padding: 32px 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.centered-form label {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  color: #222;
+  font-weight: 600;
+}
+.centered-form input,
+.centered-form textarea {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+}
+.centered-form textarea {
+  min-height: 100px;
+  max-height: 220px;
+  min-width: 100%;
+  max-width: 100%;
+  resize: vertical;
+  border: 1.5px solid #bdbdbd;
+  border-radius: 6px;
+  background: #f8fafc;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+}
+.centered-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px #007bff33;
+  outline: none;
+}
+.centered-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.10);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  margin-top: 8px;
+}
+.centered-form button[type="submit"]:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 16px rgba(0,123,255,0.18);
 }
 
 /* Header styles to match index.html */
@@ -26,7 +96,7 @@ header h1 {
   margin: 0;
   padding: 10px;
   font-size: 30px;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico',cursive;
   transition: transform 0.3s ease-in-out;
 }
 header h1:hover {
@@ -129,11 +199,7 @@ body {
     font-size: 1rem;
 }
 
-@media (max-width: 700px) {
-    .contact-container {
-        padding: 18px 8px;
-    }
-}
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: url('../images/index/bg.jpg') no-repeat center center fixed;
