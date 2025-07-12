@@ -15,7 +15,8 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 80vh;
-  margin: 0;
+  margin: 0px;
+  
 }
 .centered-form form {
   width: 100%;
