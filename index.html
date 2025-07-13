@@ -19,19 +19,79 @@
 
       <!-- Navigation -->
   <header>
-    <h1 style="font-family: 'Pacifico', cursive;" >Swift Route Lanka</h1>
+    <h1 style="font-family: 'Pacifico', cursive;">Swift Route Lanka</h1>
     <nav>
       <ul class="nav-links">
         <li><a href="https://swiftroutelanka.xyz">Home</a></li>
         <li><a href="https://places.swiftroutelanka.xyz">Places to Go</a></li>
-        <li><a href="https://vehical.swiftroutelanka.xyz">Vehicle Renting</a></li>
+        <li><a href="https://packages.swiftroutelanka.xyz">Vehicle Renting</a></li>
         <li><a href="https://contact.swiftroutelanka.xyz">Contact</a></li>
       </ul>
+      
+
+
       <button class="nav-toggle" aria-label="Open menu">
         <i class="fas fa-bars"></i>
       </button>
     </nav>
+          <div class="nav-auth-buttons" id="auth-buttons">
+        <a href="login.html" class="nav-btn login-btn">Login</a>
+      </div>
   </header>
+  <style>
+    .nav-auth-buttons {
+      display: flex;
+      margin-left: 20px;
+      vertical-align: middle;
+      justify-content: flex-end;
+      align-items: center;
+      dis
+    }
+    .nav-btn {
+      display: inline-block;
+      padding: 8px 18px;
+      margin: 0 4px;
+      border-radius: 20px;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    .login-btn {
+      background: #fff;
+      color: #007bff;
+      border: 1px solid #007bff;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.07);
+    }
+    .login-btn:hover {
+      background: #007bff;
+      color: #fff;
+    }
+    .register-btn {
+      background: #007bff;
+      color: #fff;
+      border: 1px solid #007bff;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.07);
+    }
+    .register-btn:hover {
+      background: #0056b3;
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      .nav-auth-buttons {
+        display: block;
+        margin: 10px 0 0 0;
+        text-align: right;
+      }
+      .nav-btn {
+        margin: 4px 0;
+        width: 100px;
+      }
+    }
+  </style>
   
   <section id="Email" class="centered-form">
     <form id="contact-form" action="https://formspree.io/f/xkgbyggv" method="POST" onsubmit="showThankYou()">
